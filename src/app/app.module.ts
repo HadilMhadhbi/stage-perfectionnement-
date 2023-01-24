@@ -8,10 +8,13 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { IndexComponent } from './components/index/index.component';
 import { OurworkComponent } from './components/ourwork/ourwork.component';
+import { AppRoutingRoutes } from './app-routing.routing';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     HeaderComponent,
     AboutComponent,
     ClientsComponent,
@@ -20,7 +23,9 @@ import { OurworkComponent } from './components/ourwork/ourwork.component';
     OurworkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingRoutes,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
